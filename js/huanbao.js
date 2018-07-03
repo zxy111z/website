@@ -24,4 +24,12 @@
     toTop.onclick=function(){
         document.documentElement.scrollTop=0;
     }
+    window.onscroll=function(){
+        let st = document.documentElement.scrollTop;
+        if (st >= 420) {
+            toTop.style.display = "block";
+        } else {
+            toTop.style.display = "none";
+        }
+    }
 }

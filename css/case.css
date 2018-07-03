@@ -139,11 +139,20 @@ header{
     left: 3px;
     width: 278px;
     height: 209px;
+    overflow: hidden;
 }
 .case-item img,.case-item-bottom img{
     display: block;
     width: 100%;
     height: 100%;
+}
+.mask{
+    width:278px;
+    height:209px;
+    position: absolute;
+    left: -278px;
+    top: 0;
+    background: rgba(0,0,0,0.6);
 }
 .case-item-bottom{
     position: absolute;
@@ -445,7 +454,7 @@ footer .footer-box p:nth-of-type(2){
     position: fixed;
     right: 40px;
     bottom: 50px;
-    display: block;
+    display: none;
     opacity: 1;
     background: url("../img/back.png") no-repeat 50% 50%;
     background-size: cover;
